@@ -37,9 +37,10 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           source: "dist/*"
-          target: "/var/www/vam_collection_frontend"
+          target: "/var/www/collection-Frontend"
           strip_components: 1
           overwrite: true
+          debug: true
 
       # Reload Nginx
       - name: Reload Nginx
